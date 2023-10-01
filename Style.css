@@ -11,7 +11,6 @@ h1 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 40px;
 }
 
 .bg-wallpaper {
@@ -57,8 +56,14 @@ h1 {
 }
 
 .title {
-  font-size: 120px;
-  margin-top: 200px;
+  font-size: 40px;
+  margin-top: 50px;
+  color: bisque;
+}
+
+.main-img{
+  float: right;
+  margin: 0 7px 7px 7px; 
 }
 
 .footer {
@@ -176,5 +181,6 @@ textarea {
 .caption-image {
   color: black;
   text-decoration: none;
+  font-size: 14px;
 }
 
