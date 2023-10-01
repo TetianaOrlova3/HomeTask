@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.bg-wallpaper {
+  background-color: black;
+  background-image: url(../HomeTask/pages/Image/фон.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  z-index: -1;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(99, 99, 99);
+  z-index: 1;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.content {
+  background-color: grey;
+  color: black;
+  margin-top: 180px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+  min-height: 300px;
+  z-index: 0;
+}
+
+.title {
+  font-size: 120px;
+  margin-top: 200px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar-list {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.navbar-link {
+  border: 2px solid black;
+  padding: 1em;
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.25);
+  transition: 1s;
+}
+
+.navbar-link.active {
+  background-color: white;
+  color: black;
+}
+
+/* страница КОНТАКТЫ */
+.map {
+  width: 600px;
+  height: 400px;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: rgb(0, 153, 255);
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+/* страница ГАЛЕРЕЯ */
+.textura {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+
+  background-color: red;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(../HomeTask/pages/Image/texture.jpg);
+  background-size: 500px;
+  background-repeat: repeat;
+  background-position: top;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3em;
+  margin: 10px;
+}
+
+.section-gallery {
+  text-align: center;
+  align-items: center;
+}
+
+.slide-gallery {
+  border: 2px solid black;
+  margin: 10px
+}
+
+.slide-gallery:hover {
+  border-color: transparent;
+}
+
+.caption-image {
+  color: black;
+  text-decoration: none;
+}
+

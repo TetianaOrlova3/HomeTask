@@ -6,54 +6,63 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../../lessons_3/Style.css">
+  <link rel="stylesheet" href="../Style.css">
 </head>
 
 <body>
 
-  <header>
+  <header class="header">
     <div class="container">
-      <a href="../index.html">Главная</a>
-      <a href="contact.html">Контакты</a>
-      <a href="gallery.html">Галерея</a>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link active" href="../index.html">Главная</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="contact.html">Контакты</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="gallery.html">Галерея</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <div class="container">
+  <div class="container content">
     <h1>Контакты</h1>
     <div>
       <p>Адрес организации: 01011, г. Киев, ул. Промышленная,11</p>
     </div>
 
     <div>
-      <p>Как добраться?</p>
-      <img src="page-nav/карты.png" alt="Адрес на карте">
+      <img class="map" src="page-nav/карты.png" alt="Адрес на карте">
     </div>
 
-    <form action="https://tests.fomenko.top/echo/index.php">Форма обратной связи
+    <form action="#">
       <fieldset>
         <legend>Введите данные</legend>
 
-        <div>
+        <div class="form-group">
           <label for="name">Имя</label>
           <input type="text" id="name" name="name" placeholder="Имя">
         </div>
 
-        <div>
+        <div class="form-group">
           <label for="phone">Телефон</label>
           <input type="text" id="phone" name="phone" placeholder="Телефон">
         </div>
 
-        <div>
+        <div class="form-group">
           <label for="mail">email</label>
           <input type="text" id="mail" name="mail" placeholder="введите email">
         </div>
 
-        <div>
+        <div class="form-group">
           <textarea id="ques" name="question" cols="30" rows="10" placeholder="Задайте вопрос">Задайте вопрос</textarea>
         </div>
 
-        <div>
+        <div class="form-group">
           <input type="submit" id="otpr" name="otpr" value="Отправить">
         </div>
 
@@ -61,11 +70,11 @@
     </form>
   </div>
 
-  <div class="container">
-    <footer>
-      Орлова Тeтяна &copy;
-    </footer>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      &copy; Орлова Татьяна
+    </div>
+  </footer>
 
 </body>
 
